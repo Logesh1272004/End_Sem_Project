@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background-image: url('../images/diet.jpg'); /* Path to your image */
+    background-size: cover; /* This will ensure the image covers the entire background */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.12);
+    width: 85%;
+    max-width: 1000px;
+    transition: all 0.3s ease;
+}
+
+.container:hover {
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    text-align: center;
+    color: #28a745;
+    font-size: 38px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+h3 {
+    text-align: center;
+    color: #555;
+    margin-bottom: 30px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.meal-planner-settings {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.calories-section, 
+.diet-type-section, 
+.dietary-preferences-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.dietary-preferences-section {
+    margin-top: 20px;
+}
+
+.diet-type-section {
+    margin-top: -17px;
+}
+
+.calories {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    width: 200px;
+}
+
+.calories-input {
+    width: 100px;
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+    border: 2px solid #d89e09;
+    border-radius: 8px;
+    background-color: #f8f8f8;
+    transition: all 0.3s ease;
+}
+
+.calories-input:focus {
+    border-color: #010101;
+    outline: none;
+    background-color: #fff;
+}
+
+.calculator-btn {
+    background-color: #fd7e14;
+    border: none;
+    padding: 5px 20px;
+    color: white;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    gap: 20px;
+    transition: all 0.3s ease;
+}
+
+.calculator-btn:hover {
+    background-color: #fc6410;
+}
+
+.calculator-section {
+    font-size: 1rem;
+    color: #666;
+    margin-top: 20px;
+    margin-right: -2px; /* Adjust the space between input box and 'Not sure?' */
+}
+
+.diet-type-dropdown,
+.dietary-preferences-dropdown {
+    padding: 12px;
+    border: 2px solid #28a745;
+    border-radius: 8px;
+    background-color: #f8f8f8;
+    transition: all 0.3s ease;
+    width: 200px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.diet-type-dropdown:hover,
+.dietary-preferences-dropdown:hover {
+    border-color: #28a745;
+    background-color: #fff;
+}
+
+.meal-snack-section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.number-of-meals,
+.number-of-snacks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.meal-options,
+.snack-options {
+    display: flex;
+    gap: 15px;
+}
+
+.meal-btn,
+.snack-btn {
+    background-color: #f0f0f0;
+    border: 2px solid #1969AA;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.meal-btn.active,
+.snack-btn.active {
+    background-color: #1969AA;
+    color: white;
+}
+
+.meal-btn:hover,
+.snack-btn:hover {
+    border-color: #1969AA;
+    background-color: #e9f7ef;
+}
+
+.create-plan-btn {
+    width: 100%;
+    background: linear-gradient(135deg, #1969AA, #1969AA);
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+.create-plan-btn:hover {
+    background: linear-gradient(135deg, #1969AA, #1969AA);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
